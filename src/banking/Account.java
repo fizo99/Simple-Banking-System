@@ -1,6 +1,8 @@
 package banking;
 
-
+// CR: usun komentarze
+// CR: do poczytania: czesto zamiast tworzenia getterow uzywa sie Lomboka - zmniejsza to ilosc boilerplate kodu
+// Account generator
 public class Account {
     private final String cardNumber;
     private final String pin;
@@ -18,3 +20,4 @@ public class Account {
         return this.pin;
     }
 }
+

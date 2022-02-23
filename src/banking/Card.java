@@ -2,21 +2,26 @@ package banking;
 
 import java.util.Random;
 
+// CR: usun komentarze
 // Card generator
 public class Card {
     private static final Random random = new Random();
-
+    // CR: usun komentarze
     // generate random card number
     public static String cardNumber() {
+        // CR: usun komentarze
+        // CR: taki string "400000" dobrze byloby wyciagnac do jakiejs stałej w klasie
         StringBuilder number = new StringBuilder("400000");
         for (int i = 0; i < 9; i++) {
             number.append(random.nextInt(10));
         }
+
         String checkSum = String.valueOf(validCheckSum(number.toString()));
         number.append(checkSum);
         return number.toString();
     }
 
+    // CR: usun komentarze
     // generate random pin
     public static String pin() {
         StringBuilder pin = new StringBuilder();
@@ -25,7 +30,7 @@ public class Card {
         }
         return pin.toString();
     }
-
+    // CR: usun komentarze
     // check sum 400000 500990212 3
     public static int validCheckSum(String cardNumber) {
         int sum = 0;
