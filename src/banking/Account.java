@@ -1,6 +1,6 @@
 package banking;
 
-// Account generator
+
 public class Account {
     private final String cardNumber;
     private final String pin;
